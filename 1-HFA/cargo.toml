@@ -1,0 +1,14 @@
+[package]
+name = "one_hfa"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "one_hfa"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = "z"
+lto = true
+panic = "abort"
+
